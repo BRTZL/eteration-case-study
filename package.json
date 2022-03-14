@@ -1,0 +1,72 @@
+{
+  "name": "case_study",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "lint": "eslint .",
+    "format": "prettier --write '**/*.ts*'",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "~1.15.0",
+    "@react-native-masked-view/masked-view": "0.2.5",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.5.0",
+    "@react-navigation/stack": "^6.0.11",
+    "@reduxjs/toolkit": "^1.8.0",
+    "axios": "^0.26.1",
+    "expo": "^43.0.0",
+    "expo-status-bar": "~1.1.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-43.tar.gz",
+    "react-native-elements": "^3.4.2",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.8.0",
+    "react-native-vector-icons": "^9.1.0",
+    "react-native-web": "0.17.1",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@testing-library/jest-native": "^4.0.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/react-native": "^8.0.0",
+    "@types/jest": "^27.0.2",
+    "@types/react-native": "^0.66.1",
+    "@types/redux-logger": "^3.0.9",
+    "eslint": "^7.24.0",
+    "eslint-config-handlebarlabs": "^0.0.6",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest-expo": "^43.0.0",
+    "prettier": "^2.2.1",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+    ],
+    "setupFiles": [
+      "./setup.js"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
+  },
+  "author": "Bartu OZEL",
+  "license": "MIT",
+  "private": true
+}
